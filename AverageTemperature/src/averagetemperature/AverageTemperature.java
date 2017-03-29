@@ -31,8 +31,8 @@ conf.setOutputValueClass(IntWritable.class);
 conf.setMapperClass(AverageTemperatureMapper.class);
 conf.setReducerClass(AverageTemperatureReducer.class);
  
-FileInputFormat.addInputPath(conf, new Path(args[0]));
-FileOutputFormat.setOutputPath(conf,new Path(args[1]));
+FileInputFormat.addInputPath(conf, new Path(args[0])); //args[0] est l'argument input (fichier text) dans la directoire /input
+FileOutputFormat.setOutputPath(conf,new Path(args[1])); //args[1] est l'argument output path .les resultat seront stocker dans ce path
  
 FileSystem.getLocal(conf).delete(new Path(args[1]), true);
 JobClient.runJob(conf);
