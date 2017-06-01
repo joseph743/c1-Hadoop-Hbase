@@ -37,6 +37,8 @@ FileOutputFormat.setOutputPath(conf,new Path(args[1])); //args[1] est l'argument
 FileSystem.getLocal(conf).delete(new Path(args[1]), true);
 JobClient.runJob(conf);
  
+ 
+ //Dans le CLI executez la commande : hadoop jar <path de Java jar file "/AverageTemerature/dist/AvgTemperature.jar"> <path de hdfs> <nom du programme a execute "AvgTemperature">
 }
  
 }
