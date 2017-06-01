@@ -1,0 +1,1 @@
+Ce fichier contient un journal détaillé à partir d'un thermomètre, les données sont collectées dans le thermomètre chaque année tout au long de l'année. Notre mission est de collecter les données par jour et de calculer la température moyenne en utilisant Map / Reduce
